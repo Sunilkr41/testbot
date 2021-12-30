@@ -1,5 +1,5 @@
 """
-Music Player, Telegram Voice Chat Bot
+Test Player, Telegram Voice Chat Bot
 Copyright (c) 2021  Asm Safone <https://github.com/AsmSafone>
 
 This program is free software: you can redistribute it and/or modify
@@ -34,7 +34,7 @@ class Config:
         if not self.SESSION or not self.API_ID or not self.API_HASH:
             print("Error: SESSION, API_ID and API_HASH is required!")
             quit(0)
-        self.PREFIXES: list = os.environ.get("PREFIX", "!").split()
+        self.PREFIXES: list = os.environ.get("PREFIX", ".").split()
         self.LANGUAGE: str = os.environ.get("LANGUAGE", "en").lower()
         self.CUSTOM_QUALITY: str = os.environ.get("CUSTOM_QUALITY", "high").lower()
 
